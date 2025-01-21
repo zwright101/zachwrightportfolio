@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Nav.css';
 import { useSelector } from 'react-redux';
+import Button from '@mui/material/Button';
+import './Nav.css';
 
 function Nav() {
   const user = useSelector((store) => store.user);
   const location = useLocation();
+  const isLandingPage = location.pathname === '/' || location.pathname === '/home';
 
-  // Check if the current route is the landing page
-  const isLandingPage = location.pathname === '/home';
+  console.log('Current Path:', location.pathname);
+  console.log('Is Landing Page:', isLandingPage);
 
   return (
     <div className={`nav ${isLandingPage ? 'nav-vertical' : 'nav-horizontal'}`}>
@@ -17,27 +19,54 @@ function Nav() {
           <img src="/public/ProfilePic.jpg" alt="Profile" />
         </div>
       )}
-      <h2 className={`nav-title ${isLandingPage ? 'centered-title' : ''}`}>
-        ZacharyWright.io
-      </h2>
       <div className={`nav-links ${isLandingPage ? 'nav-links-vertical' : ''}`}>
         {!user.id && (
-          <Link className="navLink" to="/home">
+          <Button
+            component={Link}
+            to="/home"
+            variant="contained"
+            color="primary"
+            className="navLink"
+          >
             Home
-          </Link>
+          </Button>
         )}
-        <Link className="navLink" to="/resume">
+        <Button
+          component={Link}
+          to="/resume"
+          variant="contained"
+          color="primary"
+          className="navLink"
+        >
           Resume
-        </Link>
-        <Link className="navLink" to="/portfolio">
+        </Button>
+        <Button
+          component={Link}
+          to="/portfolio"
+          variant="contained"
+          color="primary"
+          className="navLink"
+        >
           Portfolio
-        </Link>
-        <Link className="navLink" to="/blog">
+        </Button>
+        <Button
+          component={Link}
+          to="/blog"
+          variant="contained"
+          color="primary"
+          className="navLink"
+        >
           Blog
-        </Link>
-        <Link className="navLink" to="/contact">
+        </Button>
+        <Button
+          component={Link}
+          to="/contact"
+          variant="contained"
+          color="primary"
+          className="navLink"
+        >
           Contact Me!
-        </Link>
+        </Button>
       </div>
     </div>
   );

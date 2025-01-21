@@ -1,5 +1,6 @@
 import React from 'react';
 import './LandingPage.css';
+import Footer from '../Footer/Footer';
 
 function LandingPage() {
   return (

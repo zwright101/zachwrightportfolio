@@ -1,13 +1,16 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import './Footer.css';
 
-// This is one of our simplest components
-// It doesn't have local state, so it can be a function component.
-// It doesn't dispatch any redux actions or display any part of redux state
-// or even care what the redux state is, so it doesn't need 'connect()'
-
 function Footer() {
-  return <footer>&copy; Zachary Wright 2025</footer>;
+  const location = useLocation();
+  const isLandingPage = location.pathname === '/home';
+
+  return (
+    <footer className={`footer ${isLandingPage ? 'footer-landing' : ''}`}>
+      &copy; Zachary Wright
+    </footer>
+  );
 }
 
 export default Footer;
