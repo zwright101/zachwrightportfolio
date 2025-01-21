@@ -13,6 +13,9 @@ import AboutPage from '../AboutPage/AboutPage';
 import UserPage from '../UserPage/UserPage'; // Rename or replace with a portfolio-related page
 import InfoPage from '../InfoPage/InfoPage'; // Rename or replace with a portfolio-related page
 import LandingPage from '../LandingPage/LandingPage';
+import ResumePage from '../Resume/resume';
+import Portfolio from '../Portfolio/Portfolio';
+import ContactMe from '../ContactMe/ContactMe';
 
 import './App.css';
 
@@ -35,11 +38,15 @@ function App() {
           </Route>
 
           <Route exact path="/portfolio">
-            <UserPage /> {/* Replace with your portfolio page */}
+            <Portfolio /> {/* Replace with your portfolio page */}
+          </Route>
+
+          <Route exact path="/resume">
+            <ResumePage />
           </Route>
 
           <Route exact path="/contact">
-            <InfoPage /> {/* Replace with your contact page */}
+            <ContactMe /> {/* Replace with your contact page */}
           </Route>
 
           {/* 404 Page */}
