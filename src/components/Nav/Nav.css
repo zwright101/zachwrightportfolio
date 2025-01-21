@@ -10,7 +10,7 @@
   height: 100vh;
   width: 200px;
 
-  background-color: #00acb0;
+  background-color: #2C3E50; /* Deep Blue Gray */
   overflow: hidden;
   padding: 20px 10px;
 }
@@ -18,6 +18,8 @@
 .nav-vertical .nav-title {
   text-align: center;
   margin-bottom: 20px;
+  color: #ffffff; /* Light Gray */
+  font-size: 1.5rem;
 }
 
 .nav-vertical .nav-pic img {
@@ -25,6 +27,7 @@
   height: 100px;
   border-radius: 50%;
   margin-bottom: 20px;
+  border: 3px solid #ffffff; /* Light Gray border */
 }
 
 .nav-links-vertical {
@@ -37,6 +40,17 @@
   width: 100%;
   text-align: center;
   padding: 10px;
+  background-color: #34495E; /* Dark Slate Blue */
+  color: #ECF0F1; /* Light Gray text */
+  border-radius: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links-vertical .navLink:hover {
+  background-color: #E74C3C; /* Bright Red for hover */
+  color: #FFFFFF; /* White for hover text */
 }
 
 /* Default horizontal navigation for other pages */
@@ -46,7 +60,7 @@
   align-items: center;
 
   margin: 0 0 30px;
-  background-color: #00acb0;
+  background-color: #2C3E50; /* Deep Blue Gray */
   overflow: hidden;
   padding: 10px 20px;
 }
@@ -54,4 +68,18 @@
 .nav-horizontal .nav-links {
   display: flex;
   gap: 20px;
+}
+
+.nav-horizontal .navLink {
+  color: #ECF0F1; /* Light Gray */
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: transparent; /* Transparent for default state */
+  border-radius: 5px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-horizontal .navLink:hover {
+  background-color: #E74C3C; /* Bright Red for hover */
+  color: #FFFFFF; /* White text */
 }

@@ -29,14 +29,19 @@ Button
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  border-color: #014041;
-  border-width: 1px 1px 3px;
-  border-radius: 4px;
-  background-color: #00acb0;
-  color: #f8f8f8;
-  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #FF7F6A; /* Lighter Red for better pop */
+  color: #FFFFFF; /* White text */
+  font-size: 1rem;
   outline: 0;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #FF6347; /* Slightly darker on hover */
+  transform: translateY(-2px); /* Add a subtle lift effect */
 }
 
 .btn_sizeMin {
@@ -54,27 +59,20 @@ Button
   width: 100%;
 }
 
-.btn:hover {
-  background-color: #008183;
-  text-decoration: none;
-}
-
-/* This line makes the "Register" and "Login" buttons look like links */
 .btn_asLink {
   padding: 0;
   border-width: 0;
-  border-bottom: 1px solid #444;
-  border-radius: 0;
+  border-bottom: 1px solid #FF7F6A; /* Lighter red underline */
   background: none;
   font: inherit;
-  color: #444;
+  color: #FF7F6A;
 }
 
 .btn_asLink:hover {
-  background-color: transparent;
-  border-color: #008183;
-  color: #008183;
+  color: #FF6347; /* Darker red for hover */
+  border-color: #FF6347;
 }
+
 
 /* --------------------------------------------------------------------------------
 Alert
