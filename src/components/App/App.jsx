@@ -16,6 +16,7 @@ import LandingPage from '../LandingPage/LandingPage';
 import ResumePage from '../Resume/resume';
 import Portfolio from '../Portfolio/Portfolio';
 import ContactMe from '../ContactMe/ContactMe';
+import Blog from '../Blog/Blog';
 
 import './App.css';
 
@@ -47,6 +48,10 @@ function App() {
 
           <Route exact path="/contact">
             <ContactMe /> {/* Replace with your contact page */}
+          </Route>
+
+          <Route exact path="/blog">
+            <Blog /> {/* Replace with your contact page */}
           </Route>
 
           {/* 404 Page */}
