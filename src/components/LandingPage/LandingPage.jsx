@@ -20,35 +20,33 @@ function LandingPage() {
       <div className="grid">
         <div className="grid-col grid-col_8">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            id felis metus. Vestibulum et pulvinar tortor. Morbi pharetra lacus
-            ut ex molestie blandit. Etiam et turpis sit amet risus mollis
-            interdum. Suspendisse et justo vitae metus bibendum fringilla sed
-            sed justo. Aliquam sollicitudin dapibus lectus, vitae consequat odio
-            elementum eget. Praesent efficitur eros vitae nunc interdum, eu
-            interdum justo facilisis. Sed pulvinar nulla ac dignissim efficitur.
-            Quisque eget eros metus. Vestibulum bibendum fringilla nibh a
-            luctus. Duis a sapien metus.
+            Hi! I'm Zach Wright, a detail-oriented technical professional with a 
+            passion for continuous learning and innovation in the software enginnering
+            and tech world. As a full stack developer, I love the prospect of being able
+            to build anything I love with technology
           </p>
 
           <p>
-            Praesent consectetur orci dui, id elementum eros facilisis id. Sed
-            id dolor in augue porttitor faucibus eget sit amet ante. Nunc
-            consectetur placerat pharetra. Aenean gravida ex ut erat commodo, ut
-            finibus metus facilisis. Nullam eget lectus non urna rhoncus
-            accumsan quis id massa. Curabitur sit amet dolor nisl. Proin
-            euismod, augue at condimentum rhoncus, massa lorem semper lacus, sed
-            lobortis augue mi vel felis. Duis ultrices sapien at est convallis
-            congue.
+            As a graduate from Prime Digital Academy's Full Stack Software Engineering bootcamp, I
+            was able to hone my skills in JavaScript, React, Node.js, and PostgreSQL. It's been enjoyable
+            to continue learning languages, frameworks, libraries, concepts, and more fundamentals. I'm 
+            working towards my first real world work experience in programming and believe I have the 
+            capibality and the confidence to learn what I need to in order to be a successful asset to any
+            team
           </p>
 
           <p>
-            Fusce porta diam ac tortor elementum, ut imperdiet metus volutpat.
-            Suspendisse posuere dapibus maximus. Aliquam vitae felis libero. In
-            vehicula sapien at semper ultrices. Vivamus sed feugiat libero. Sed
-            sagittis neque id diam euismod, ut egestas felis ultricies. Nullam
-            non fermentum mauris. Sed in enim ac turpis faucibus pretium in sit
-            amet nisi.
+            Outside of programming, I'm a massive nerd. I love all things video games, comic books, movies, 
+            television shows, and of course spinning vinyl on my record player. I am in early stages of launching
+            a podcast with a friend called Nerding Casually, where the main topic of conversation is all things nerd!
+            I like to think I'm an incredibly loyal person, as evidenced by my continued support of Minnesota sports
+            and Tottenham Hotspur. I have a German Shephard named Chibs who likes to keep me busy and I love spending 
+            time talking and spending time with my friends and family. 
+          </p>
+
+          <p>
+            If you have any other questions or would like to know more or to follow my work, check out my links 
+            and come follow along! Let's build something amazing together! 
           </p>
         </div>
         {/* <div className="grid-col grid-col_4">
